@@ -11,3 +11,11 @@ export interface IUser {
   is_blocked: boolean;
   last_active_at: Date;
 }
+
+export interface LoginPayload {
+  phone: string;
+  password: string;
+}
+
+export interface RegisterPayload extends Partial<IUser> {}
+export interface RefreshPayload {}

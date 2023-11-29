@@ -8,7 +8,6 @@ export const handleNavigate = (href: string, params?: Record<string, any>) => {
 };
 
 export const goBack = () => {
-  console.log("back");
   NavigationServices.goBack();
 };
 
